@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(206, 191, 191);
+        font-family: gilroy;
+      }
+
+      .main {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(200, 191, 191);
+      }
+      .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 85%;
+        width: 80%;
+        background-color: rgb(98, 163, 109);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 60px;
+        width: 100%;
+        background-color: rgb(138, 197, 148);
+      }
+      .top .box {
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        /* background-color: red; */
+      }
+      .top .box h3{
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .top .box .circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 45px;
+        width: 45px;
+        border-radius: 10px;
+        color: #000;
+        background-color: beige;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .btm {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        width: 100%;
+        height: calc(100% - 60px);
+        background-color: rgb(98, 163, 109);
+      }
+      /* .btm h2{
+        display: none;
+      } */
+      .btm .buble {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        background-color: rgb(129, 190, 150);
+      }
+      .btm .buble:hover{
+        background-color: rgb(115, 216, 150);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="center">
+        <div class="top">
+          <div class="box">
+            <h3>score</h3>
+            <div id="score" class="circle">0</div>
+          </div>
+          <div class="box">
+            <h3>hits</h3>
+            <div id="hits" class="circle">0</div>
+          </div>
+          <div class="box">
+            <h3>timer</h3>
+            <div id="timer" class="circle">60</div>
+          </div>
+        </div>
+        <div class="btm">
+          <!-- <h2></h2> -->
+          <!-- <div class="buble"></div> -->
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
